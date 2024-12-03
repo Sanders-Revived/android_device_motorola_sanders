@@ -27,12 +27,6 @@ static inline const char* BtmGetDefaultName()
     char product_device[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", product_device, "");
 
-    if (strstr(product_device, "ali"))
-        return "Moto G(6)";
-    if (strstr(product_device, "albus"))
-        return "Moto Z2 Play";
-    if (strstr(product_device, "potter"))
-        return "Moto G(5) Plus";
     if (strstr(product_device, "sanders"))
         return "Moto G(5S) Plus";
 
