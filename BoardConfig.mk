@@ -132,8 +132,24 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
-TARGET_KERNEL_CONFIG := sanders_defconfig
 TARGET_KERNEL_VERSION := 4.9
+
+TARGET_KERNEL_CONFIG := \
+    vendor/msm8953-perf_defconfig \
+    vendor/motorola/sanders/sanders.config \
+    vendor/common.config \
+    vendor/feature/android-12.config \
+    vendor/feature/lmkd.config \
+    vendor/feature/no-camera-stack.config \
+    vendor/feature/no-audio-stack.config
+
+TARGET_KERNEL_RECOVERY_CONFIG := \
+    vendor/msm8953-perf_defconfig \
+    vendor/motorola/sanders/sanders.config \
+    vendor/common.config \
+    vendor/feature/no-camera-stack.config \
+    vendor/feature/no-wlan-driver.config \
+    vendor/feature/no-audio-stack.config
 
 # LLVM
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
