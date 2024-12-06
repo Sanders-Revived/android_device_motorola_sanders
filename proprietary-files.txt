@@ -668,42 +668,34 @@ product/lib64/libdpmctmgr.so
 product/lib64/libdpmfdmgr.so
 product/lib64/libdpmtcm.so
 
-# DRM - from deen_sprout
-vendor/bin/qseecomd
-vendor/lib/libQSEEComAPI.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libssd.so
+# DRM - from LA.UM.10.6.2.r1-02500-89xx.0
+vendor/bin/qseecomd|47fd303d29b881a4164e6b7471d93f33c3261c3e
+vendor/lib/libQSEEComAPI.so|48086bfa5658d789d1c7df63b5403342cdefb7a0
+vendor/lib64/libGPreqcancel.so|85bd5c16f107b7fbfccf506386e52e41d53d67e7
+vendor/lib64/libGPreqcancel_svc.so|6552d13663398ca2f7dc978151ca2ad0f378b020
+vendor/lib64/libQSEEComAPI.so|f723feb6d111c68f10dca13ab4d1ad0b90cf6aa1
+vendor/lib64/libSecureUILib.so|c2de7af8cec63cea86dcb0bcb0ec242ab55e5638
+vendor/lib64/libStDrvInt.so|1ae2e2e25f97fc064ec2d40a09d6dff30290dd26
+vendor/lib64/libcpion.so|17f41ed149554f77c70aec215f60f3633c1889c8
+vendor/lib64/libdrmfs.so|5beee64a0d18977b7174d859bb85091dfadc9127
+vendor/lib64/libdrmtime.so|2fe9bc426cbe2163d1b1524b69d7ce3d5f83c365
+vendor/lib64/libhdcpsrm.so|8af6646f328531b4299a90f31acc9b874ad6f7a3
+vendor/lib64/liboemcrypto.so|cff69ca64f9015e17cdcc2c45c992d262d864013
+vendor/lib64/libqisl.so|cf0d6f091fefb95f482f6ea5dfd98755bf816f63
+vendor/lib64/librpmb.so|5d9622eb99a402f0adf8c8b47d08e58922a2d65f
+vendor/lib64/libsecureui.so|acb4db6510ac609c089764e086398f4ae2dd35cd
+vendor/lib64/libsecureui_svcsock.so|59b3357686dceeec83c478f0dfdeecb28f6e17a1
+vendor/lib64/libssd.so|56a389bf3dcdd19254c7b944b5dc984abe940033
 
-# DRM-Qualcomm Trusted Execution Enviornment - from deen_sprout
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# DRM - from Coral - 12/SQ1A.220105.002/7961164
+vendor/lib64/libops.so|3c763226ccc3b0f32e131af71a458b41bf2b3d8d
+vendor/lib64/libspl.so|f8bbe0322ce06a545f5dc79c888183ac61673b68
 
-# DRM-Widevine - from deen_sprout
-#vendor/lib/liboemcrypto.so
-#vendor/lib64/liboemcrypto.so
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libcpion.so
-vendor/lib/libhdcpsrm.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libcpion.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/libwvhidl.so
+# DRM - Widevine - from LA.UM.10.6.2.r1-02500-89xx.0
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine|0789856c51366175e1e7878e378f586c3eca7bd9
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+vendor/lib64/libwvhidl.so|88780dbc2e14e4e1ff6171085fa0b37fbc8d64f2
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_550.xml

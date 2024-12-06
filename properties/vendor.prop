@@ -51,6 +51,9 @@ persist.camera.eis.enable=1
 # Codec2 switch
 debug.media.codec2=2
 
+# DRM
+drm.service.enabled=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
