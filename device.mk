@@ -320,10 +320,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Telephony
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
